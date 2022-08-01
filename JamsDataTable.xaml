@@ -1,0 +1,33 @@
+﻿<Window x:Class="TBTA_data_feed.JamsDataTable"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TBTA_data_feed"
+        mc:Ignorable="d"
+        Title="JamsDataTable" Height="450" Width="800">
+    <Grid>
+
+        <DataGrid>
+            <DataGrid.Columns>
+                
+                <DataGridTextColumn Header="Unique Incident Identifier"/>
+                <DataGridTextColumn Header="Last Update"/>
+                <DataGridTextColumn Header="Country Code"/>
+                <DataGridTextColumn Header="City"/>
+                <DataGridTextColumn Header="Street"/>
+                <DataGridTextColumn Header="Speed"/>
+                <DataGridTextColumn Header="End Node"/>
+                <DataGridTextColumn Header="Reliability"/>
+                <DataGridTextColumn Header="Incident Type"/>
+                <DataGridTextColumn Header="Turn Type"/>
+                <DataGridTextColumn Header="Road Type Code"/>
+                <DataGridTextColumn Header="Delay"/>
+                <DataGridTextColumn Header="Length"/>
+                <DataGridTextColumn Header=""/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,92 @@
+﻿<Window x:Class="TBTA_data_feed.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TBTA_data_feed"
+        mc:Ignorable="d" FontSize="18 "
+        Title="MTA Bridges and Tunnels" Height="450" Width="800">
+    <Grid Margin="-2,0,2,0">
+        <Grid.ColumnDefinitions>
+            <!-- column start --><ColumnDefinition Width="20"/>
+            <!-- column 1 --><ColumnDefinition Width="auto"/>
+            <!-- column 2 --><ColumnDefinition Width="auto"/>
+            <!-- column 3 --> <ColumnDefinition Width="auto"/>
+            <!-- column 4 --><ColumnDefinition Width="auto"/>
+            <!-- column 5 --><ColumnDefinition Width="auto"/>
+            <!-- column 6 --><ColumnDefinition Width="auto"/>
+            <!-- column 7 --><ColumnDefinition Width="auto"/>
+            <!-- column 8 --><ColumnDefinition Width="auto"/>
+            <!-- column * --><ColumnDefinition Width="*"/>
+            <!-- column end --><ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions >
+            <!-- row start --><RowDefinition Height="20"/>
+            <!-- row 1 --><RowDefinition Height="auto"/>
+            <!-- row 2 --><RowDefinition Height="auto"/>
+            <!-- row 3 --><RowDefinition Height="auto"/>
+            <!-- row 4 --><RowDefinition Height="auto"/>
+            <!-- row 5 --><RowDefinition Height="auto"/>
+            <!-- row 6 --><RowDefinition Height="auto"/>
+            <!-- row 7 --><RowDefinition Height="auto"/>
+            <!-- row 8 --><RowDefinition Height="auto"/>
+            <!-- row 9 --><RowDefinition Height="auto"/>
+            <!-- row 10 --><RowDefinition Height="auto"/>
+            <!-- row 11 --><RowDefinition Height="auto"/>
+            <!-- row * --><RowDefinition Height="*"/>
+            <!-- row end --><RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="LiveTraffic Feed"
+                   Grid.ColumnSpan="3" FontSize="28" Margin="20,0,20,20"
+                   HorizontalAlignment="Center"/>
+        <!-- checked boxes  -->
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5">
+            <CheckBox  Content="Brooklyn" Margin="10"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <CheckBox  Content="Bronx" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <CheckBox  Content="Manhattan" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <CheckBox  Content="Queens" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <CheckBox  Content="Staten Island" Margin="10"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <!-- left side scroll viewer -->
+        <ScrollViewer Grid.Column="1" Grid.Row="3"  Margin="0,20,0,20">
+            <StackPanel Orientation="Vertical">
+                <CheckBox  Content="Road Type"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <CheckBox  Content="Confidence" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer Grid.Column="1" Grid.Row="5" Margin="0,20,0,20">
+            <StackPanel Orientation="Vertical">
+                <CheckBox  Content="Level"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <CheckBox  Content="Level" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Button Grid.Column="1" Grid.Row="4"
+            x:Name="AlertTableButton"
+            Width="100"
+            Margin="10"
+            HorizontalAlignment="Left"
+            Click="AlertTableButton_Click"
+            Content="Alert Table" />
+
+        <Button Grid.Column="1" Grid.Row="6"
+            x:Name="JamTableButton"
+            Width="100"
+            Margin="10"
+            HorizontalAlignment="Left"
+            Click="JamTableButton_Click"
+            Content="Show Jams" />
+
+        <!-- column 2 -->
+
+        <!-- column 3 -->
+
+        <!-- column 4 -->
+
+        <!-- column 5 -->
+    </Grid>
+</Window>
